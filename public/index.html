@@ -38,6 +38,21 @@
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+      $(function() {
+        switch(window.location.search) {
+        case "?code":
+          break;
+        case "?vegan":
+          $('#code').remove().appendTo("#dancing");
+          break;
+        case "?dancing":
+          $('#dancing').remove().prependTo("#pd");
+          break;
+        }
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -54,21 +69,21 @@
       <p>I reply to all email sent to <a href='mailto:hello@xaviershay.com'>hello@xaviershay.com</a>, so do write.</p>
     </section>
 
-    <h2>Code</h2>
-    <section>
+    <section id='pd'>
+      <h2>Personal Development</h2>
+      <p>My brother and I write the personal development blog <a href='http://www.two-shay.com'>TwoShay</a>, as well as running a regularly month long vegan mentoring group <a href='http://www.vegan-month.com'>Vegan Month</a>.</p>
+    </section>
+
+    <section id='code'>
+      <h2>Code</h2>
       <p>I am very active in the open source community: I am a <a href="https://github.com/datamapper">DataMapper commiter</a>, have <a href="http://contributors.rubyonrails.org/contributors/xavier-shay/commits">contributed to Ruby on Rails</a>, and I wrote the <a href='https://github.com/xaviershay/enki'>Enki blog platform</a>, as well as many other widely used libraries such as <a href="http://xaviershay.github.com/tufte-graph">TufteGraph</a> for javascript graphing and <a href="https://github.com/xaviershay/kronic">Kronic</a> for date formatting and parsing.</p>
 
       <p>In 2010 I travelled the world running a series of Ruby on Rails workshops titled <a href='http://www.dbisyourfriend.com/'>Your Database Is Your Friend Training</a>.  
       I regularly organise and speak at the <a href="http://groups.google.com/group/rails-oceania/">Melbourne Ruby on Rails Meetup</a>, and I blog about code at <a href='http://rhnh.net/'>Robot Has No Heart</a>.</p>
     </section>
 
-    <h2>Personal Development</h2>
-    <section>
-      <p>My brother and I write the personal development blog <a href='http://www.two-shay.com'>TwoShay</a>, as well as running a regularly month long vegan mentoring group <a href='http://www.vegan-month.com'>Vegan Month</a>.</p>
-    </section>
-
-    <h2>Swing Dancing</h2>
-    <section>
+    <section id='dancing'>
+      <h2>Swing Dancing</h2>
       <p>I have been swing dancing for more than five years. I irregularly teach around Melbourne, and run two dancing related websites: <a href='http://www.lindylog.net'>LindyLog</a> for keeping a dance diary, and <a href='http://www.eventhandapp.com'>EventHand</a> for dance event management. I have also written an iPhone app <a href='http://itunes.apple.com/us/app/swing-bingo/id371856383?mt=8'>Swing Bingo</a>.</p>
     </section>
 
