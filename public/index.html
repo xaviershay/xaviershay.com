@@ -34,6 +34,50 @@
       img { border: solid 1px black; position: absolute;left: -230px;  width: 200px;}
       
       p { margin-bottom: 1em; }
+      
+      .callout {
+        float: right; 
+        padding: 0;
+        margin: 0;
+        margin-right: -82px;
+      }
+      .callout.twitter {
+        margin-right: -90px;
+      }
+      .callout.email a {
+        background-image: url('images/email.png');
+      }
+      .callout.twitter a {
+        background-image: url('images/twitter-small.png');
+        padding-left: 20px;
+      }
+      .callout a {
+        background-color: black;
+        color: white;
+        padding: 2px 5px;
+        padding-left: 23px;
+        background-repeat: no-repeat;
+        background-position: 3px 50%;
+        font-size: smaller;
+        font-weight: bold;
+        display: block;
+        float: right;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px;
+        -webkit-border-top-right-radius: 4px;
+        -webkit-border-bottom-right-radius: 4px;
+        -moz-border-radius: 0px 4px 4px 0px;
+      }
+      .callout .arrow {
+        border-color: white;
+        border-width: 11px;
+        border-top-width: 12px;
+        border-style: solid;
+        border-right-color: black;
+        height: 0;
+        width: 0;
+        float: left;
+      }
     </style>
     <!--[if IE]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -79,6 +123,7 @@
       <b>swing&nbsp;dance</b>, enjoy <b>exercise</b>, live <b>vegan</b>, 
       and I <b>teach</b> others how to do the same. I am in my mid-twenties 
       and live in Melbourne, Australia.</p>
+      <div class='callout email'><div class='arrow'></div><a href='mailto:hello@xaviershay.com'>Email</a></div>
       <p>I reply to all email sent to <a href='mailto:hello@xaviershay.com'>hello@xaviershay.com</a>, so do write.</p>
     </section>
 
@@ -102,6 +147,7 @@
 
     <h2>The Rest</h2>
     <section>
+      <div class='callout twitter'><div class='arrow'></div><a href='http://twitter.com/xshay'>Twitter</a></div>
       <p>I use <a href='http://twitter.com/xshay'>Twitter</a>,
       <a href='http://www.goodreads.com/user/show/2875383'>Goodreads</a> and
       <a href='http://www.dailymile.com/people/xaviershay'>Dailymile</a> actively. 
