@@ -1,5 +1,0 @@
-This is a static HTML site for xaviershay.com. To serve it locally:
-
-    rackup --port 3000
-
-Tested in Chrome and Firefox, not IE. CSS fixes welcome.

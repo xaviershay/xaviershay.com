@@ -1,0 +1,40 @@
+s3_bucket: xaviershay.com
+cloudfront_distribution_id: E2QIN9KKZSRTKQ
+
+# Below are examples of all the available configurations.
+# See README for more detailed info on each of them.
+
+site: public
+
+# index_document: index.html
+# error_document: error.html
+
+# max_age:
+#   "assets/*": 6000
+#   "*": 300
+
+gzip:
+  - .html
+  - .css
+  - .md
+
+# ignore_on_server: that_folder_of_stuff_i_dont_keep_locally
+
+# exclude_from_upload:
+#   - those_folders_of_stuff
+#   - i_wouldnt_want_to_upload
+
+s3_reduced_redundancy: true
+
+cloudfront_distribution_config:
+  aliases:
+    quantity: 2
+    items:
+      CNAME: xaviershay.com
+      CNAME: www.xaviershay.com
+
+cloudfront_wildcard_invalidation: true
+cloudfront_invalidate_root: true
+
+redirects:
+  "ruby-style-guide": 'http://xaviershay.github.io/writing/docs/ruby_style_guide.html'

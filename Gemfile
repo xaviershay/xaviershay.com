@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.1.2'
+ruby '2.3.1'
 
-gem 'unicorn'
+gem 's3_website'
