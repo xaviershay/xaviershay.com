@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/xshay
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://xaviershay.com
+  * I am xshay (https://keybase.io/xshay) on keybase.
+  * I have a public key ASDeCNUvU5aeS2wT6D9XGzYM5ScS9DKBJL-nRjE3ETsr2Qo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120de08d52f53969e4b6c13e83f571b360ce52712f4328124bfa7463137113b2bd90a",
+      "host": "keybase.io",
+      "kid": "0120de08d52f53969e4b6c13e83f571b360ce52712f4328124bfa7463137113b2bd90a",
+      "uid": "605bebef2d37d9695b767bc64725e119",
+      "username": "xshay"
+    },
+    "merkle_root": {
+      "ctime": 1507407124,
+      "hash": "3e456ba7a351a2584eddc2b93ddbebfd057b3048edacfb76552ccbdd0b468e3c9977de71b0b7b42a0b12db0c9fea3becf6ef6ce977cb6ba836c8d71fde1e7a9a",
+      "hash_meta": "75b65a5032db87fd3dd6a54b5ddf214548cd5c8bd9156abb4b651d6162c96831",
+      "seqno": 1536127
+    },
+    "service": {
+      "hostname": "xaviershay.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.33"
+  },
+  "ctime": 1507407133,
+  "expire_in": 504576000,
+  "prev": "2023ce78d6e51d9216234dbedebb6542037a9cfcead9572f549c23559782630a",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg3gjVL1OWnktsE+g/Vxs2DOUnEvQygSS/p0YxNxE7K9kKp3BheWxvYWTFA0N7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZGUwOGQ1MmY1Mzk2OWU0YjZjMTNlODNmNTcxYjM2MGNlNTI3MTJmNDMyODEyNGJmYTc0NjMxMzcxMTNiMmJkOTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZGUwOGQ1MmY1Mzk2OWU0YjZjMTNlODNmNTcxYjM2MGNlNTI3MTJmNDMyODEyNGJmYTc0NjMxMzcxMTNiMmJkOTBhIiwidWlkIjoiNjA1YmViZWYyZDM3ZDk2OTViNzY3YmM2NDcyNWUxMTkiLCJ1c2VybmFtZSI6InhzaGF5In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA3NDA3MTI0LCJoYXNoIjoiM2U0NTZiYTdhMzUxYTI1ODRlZGRjMmI5M2RkYmViZmQwNTdiMzA0OGVkYWNmYjc2NTUyY2NiZGQwYjQ2OGUzYzk5NzdkZTcxYjBiN2I0MmEwYjEyZGIwYzlmZWEzYmVjZjZlZjZjZTk3N2NiNmJhODM2YzhkNzFmZGUxZTdhOWEiLCJoYXNoX21ldGEiOiI3NWI2NWE1MDMyZGI4N2ZkM2RkNmE1NGI1ZGRmMjE0NTQ4Y2Q1YzhiZDkxNTZhYmI0YjY1MWQ2MTYyYzk2ODMxIiwic2Vxbm8iOjE1MzYxMjd9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoieGF2aWVyc2hheS5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMyJ9LCJjdGltZSI6MTUwNzQwNzEzMywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIyMDIzY2U3OGQ2ZTUxZDkyMTYyMzRkYmVkZWJiNjU0MjAzN2E5Y2ZjZWFkOTU3MmY1NDljMjM1NTk3ODI2MzBhIiwic2Vxbm8iOjgsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA4wamYdbHYqTCIQm4e1YOYEAVXiejo/nmKMUHUQyEAU979xFvTKnuWTXKe59M+S3Xy2r46hij8QekHHZEepG6A6hzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIHRM7vbfC8HUPPN/KHF5plO2olnnwNwd5ymm4AezkXFAo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/xshay
+
+==================================================================
