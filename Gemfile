@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.5.1'
+ruby '3.1.2'
 
 gem 's3_website'
