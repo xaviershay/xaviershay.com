@@ -1,7 +1,7 @@
 This is a static HTML site for xaviershay.com.
 
-    bin/dev      # Serve locally on port 3000
-    bin/publish  # Publish to S3. AWS creds should be `.env`
+    bin/dev         # Serve locally on port 3000
+    bin/publish-v2  # Publish to S3. `aws login` should have succeeded.
 
 Redirects (and other config) are specified in `s3_website.yml`.
 

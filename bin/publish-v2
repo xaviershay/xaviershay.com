@@ -1,0 +1,52 @@
+#!/usr/bin/env ruby
+
+require "open3"
+require 'yaml'
+require 'pp'
+
+config = YAML.load(File.read("s3_website.yml"))
+
+local = "public"
+staging = "staged"
+bucket = config.fetch("s3_bucket")
+cloudfront_id = config.fetch("cloudfront_distribution_id")
+redirects = config.fetch("redirects", {})
+
+cmds = []
+
+cmds << "rm -Rf %s" % staging
+cmds << "cp -R %s %s" % [local, staging]
+cmds << %|find staged -type f -exec gzip {} \\; -exec sh -c 'mv "$1.gz" "${1%}"' -- {} \\;|
+# cmds << "bundle exec jekyll build"
+cmds << "aws s3 sync %s s3://%s/ --content-encoding gzip" % [staging, bucket]
+cmds << "aws cloudfront create-invalidation --distribution-id %s --paths \"/*\"" % [cloudfront_id]
+
+if false
+  redirects.each do |key, value|
+    cmds << "aws s3api put-object --bucket %s --key %s --website-redirect-location %s" % [
+      bucket,
+      key,
+      value
+    ]
+  end
+else
+  cmds << "echo Skipping redirects, edit script to change"
+end
+
+def run(command)
+  Open3.popen2e(command) do |stdin, stdout_and_stderr, wait_thr|
+    stdout_and_stderr.each_line do |line|
+      puts line
+    end
+
+    exit_status = wait_thr.value
+    unless exit_status.success?
+      abort "Command failed with exit status #{exit_status.exitstatus}"
+    end
+  end
+end
+
+cmds.each do |cmd|
+  puts cmd
+  run(cmd)
+end
