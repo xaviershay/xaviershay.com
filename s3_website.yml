@@ -37,8 +37,8 @@ cloudfront_wildcard_invalidation: true
 cloudfront_invalidate_root: true
 
 redirects:
-  "ruby-style-guide": 'http://xaviershay.github.io/writing/docs/ruby_style_guide.html'
-  "rubystyleguide": 'http://xaviershay.github.io/writing/docs/ruby_style_guide.html'
+  "ruby-style-guide": 'https://xaviershay.github.io/writing/docs/ruby_style_guide.html'
+  "rubystyleguide": 'https://xaviershay.github.io/writing/docs/ruby_style_guide.html'
   "vegan-month": "https://gist.github.com/xaviershay/1379117"
   "veganmonth": "https://gist.github.com/xaviershay/1379117"
   "sheets": "https://sheets.xaviershay.com"
