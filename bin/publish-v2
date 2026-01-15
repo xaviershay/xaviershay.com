@@ -18,7 +18,7 @@ cmds << "rm -Rf %s" % staging
 cmds << "cp -R %s %s" % [local, staging]
 cmds << %|find staged -type f -exec gzip {} \\; -exec sh -c 'mv "$1.gz" "${1%}"' -- {} \\;|
 # cmds << "bundle exec jekyll build"
-cmds << "aws s3 sync %s s3://%s/ --content-encoding gzip" % [staging, bucket]
+cmds << "aws s3 sync %s s3://%s/ --content-encoding gzip --region us-east-1" % [staging, bucket]
 cmds << "aws cloudfront create-invalidation --distribution-id %s --paths \"/*\"" % [cloudfront_id]
 
 if false
